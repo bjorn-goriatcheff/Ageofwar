@@ -2,7 +2,6 @@
 #define DEF_UNITE
 
 #include <iostream>
-#include <string>
 
 using namespace std;
 
@@ -11,7 +10,11 @@ class Unite {
 		int prix;
 		int pv;
 		int attaque;
+		int joueur;
 	public :
-		Unite();
-		~Unite();
+		Unite(int prix_, int pv_, int attaque_, int joueur_);
+		virtual void action();
+		virtual void attaquer();
+		void deplacer();
 }
+#endif
