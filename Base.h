@@ -2,10 +2,11 @@ class Base {
 	private:
 	int vie;
 	int playernum;
-	boolean libre;
+	bool libre;
 	
 	public:
-	Base();
+	Base(int num);
+	~Base();
 	
 	//Set ou Get
 	void getLibre(){

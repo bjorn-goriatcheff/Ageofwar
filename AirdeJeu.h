@@ -2,8 +2,6 @@
 
 class AirdeJeu {
 	private:
-	//tableau des cases du jeu
-	int[12] tabCases;
 	//tableau des unités
 	Unite[12] tabUnit
 	//case de front d'attaque
@@ -18,5 +16,7 @@ class AirdeJeu {
 	~AirdeJeu();
 	
 	void initAir();
+	void initUnit(int case);
+	bool verifFrontLine();
 	
 };

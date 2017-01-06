@@ -9,4 +9,6 @@ classe Joueur{
 	Joueur(int num);
 	~Joueur();
 	
+	void setOr(int _or) : {or=_or;};
+	
 }
