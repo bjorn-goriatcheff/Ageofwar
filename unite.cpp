@@ -1,12 +1,19 @@
 #include "unite.h"
 
-using namespace std;
 
-Unite::Unite(int prix_, int pv_, int attaque_, int joueur_) : prix(prix_), pv(pv_), attaque(attaque_), joueur(joueur_){
+
+//Unite::Unite(int prix_, int pv_, int attaque_, int joueur_) : prix(prix_), pv(pv_), attaque(attaque_), joueur(joueur_){}
+Unite::Unite() : prix(10), pv(3), attaque(5), joueur(1){ }
+
+void Unite::deplacer() {
 	
 }
 
-void Unite::deplacer() {
+void Unite::action() {
+	
+}
+
+void Unite::attaquer() {
 	
 }
 /*

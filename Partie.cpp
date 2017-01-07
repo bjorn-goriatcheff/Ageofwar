@@ -35,11 +35,11 @@ void Partie::debut(){
 	un->setOr(8);
 	
 	//Creation des unités
-	Unite* u1 = new Unite(10, 2, 1, 0);
-	Unite* u2 = new Unite(10, 2, 1,1);
+	Unite* u1 = new Unite();
+	Unite* u2 = new Unite();
 	//placement des unités
-	air->initUnit(0, u1);
-	air->initUnit(1, u2);
+	air->initUnit(0, *u1);
+	air->initUnit(1, *u2);
 	
 }
 

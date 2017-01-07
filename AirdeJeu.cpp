@@ -1,11 +1,16 @@
 #include "AirdeJeu.h"
+AirdeJeu::AirdeJeu(){
+
+	
+}
+
 
 void AirdeJeu::initAir(Base* b1, Base* b2){
 	baseplayer1=b1;
 	baseplayer2=b2;
 	
 }
-void AirdeJeu::initUnit(int pos, Unite* unit){
+void AirdeJeu::initUnit(int pos, Unite unit){
 	tabUnit[pos] = unit;	
 }
 

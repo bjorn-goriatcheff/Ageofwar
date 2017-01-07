@@ -2,7 +2,7 @@
 class AirdeJeu {
 	private:
 	//tableau des unités
-	Unite* tabUnit[12];
+	Unite tabUnit[12];
 	//case de front d'attaque
 	int posMaxPlayer1;
 	int posMaxPlayer2;
@@ -15,7 +15,7 @@ class AirdeJeu {
 	~AirdeJeu();
 	
 	void initAir(Base* b1, Base* b2);
-	void initUnit(int pos, Unite* unit);
+	void initUnit(int pos, Unite unit);
 	bool verifFrontLine();
 	
 };
