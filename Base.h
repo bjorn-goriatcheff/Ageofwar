@@ -9,13 +9,13 @@ class Base {
 	~Base();
 	
 	//Set ou Get
-	void getLibre(){
+	bool getLibre(){
 		return libre;
 	}
-	void setLibre(boolean _libre){
+	void setLibre(bool _libre){
 		libre=_libre;
 	}
-	void getPLayernum(){
+	int getPLayernum(){
 		return playernum;
 	}
 	void setPlayernum(int num){

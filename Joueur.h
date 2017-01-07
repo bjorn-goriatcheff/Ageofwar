@@ -1,14 +1,14 @@
-classe Joueur{
+class Joueur{
 	private:
 	int numJoueur;
-	int or;
+	int orr;
 	int nb_unit;
 	bool isIA;
 	
 	public:
-	Joueur(int num);
+	Joueur(int num): numJoueur(num){};
 	~Joueur();
 	
-	void setOr(int _or) : {or=_or;};
+	void setOr(int _or)  {orr=_or;}
 	
-}
+};

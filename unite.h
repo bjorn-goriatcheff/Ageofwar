@@ -1,7 +1,6 @@
 #ifndef DEF_UNITE
 #define DEF_UNITE
 
-#include <iostream>
 
 using namespace std;
 
@@ -16,5 +15,6 @@ class Unite {
 		virtual void action();
 		virtual void attaquer();
 		void deplacer();
-}
+		/*Unite acheter(int or_disp);*/
+};
 #endif
