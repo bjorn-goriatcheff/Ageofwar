@@ -38,11 +38,14 @@ void Partie::debut(){
 	Unite* u1 = new Unite();
 	Unite* u2 = new Unite();
 	//placement des unités
-	air->initUnit(0, *u1);
-	air->initUnit(1, *u2);
+	air->initUnit(0, u1);
+	air->initUnit(1, u2);
+	
+	air->toString();
 	
 }
 
 int main(){
+	Partie* p = new Partie();
 	return 0;
 }
