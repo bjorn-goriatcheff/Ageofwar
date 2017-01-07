@@ -1,9 +1,12 @@
 #include "archer.h"
 
-using namespace std;
-
-Archer::Archer(int prix_, int pv_, int attaque_, int joueur_) : Unite(prix_, pv_, attaque_, joueur_) {
-	
+Archer::Archer(int joueur_, int place_) {
+	setPrix(12);
+	setPv(8);
+	setAttaque(3);
+	setJoueur(joueur_);
+	setSymbole('A');
+	setPlace(place_);
 }
 
 Archer::~Archer() {

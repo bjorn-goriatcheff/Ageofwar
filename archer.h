@@ -5,13 +5,11 @@
 
 #include "unite.h"
 
-using namespace std;
-
 class Archer : public Unite {
 	public :
-		Archer(int prix_, int pv_, int attaque_, int joueur_);
+		Archer(int joueur_, int place_);
 		~Archer();
-		virtual void action();
-		virtual void attaquer();
-}
+		void action();
+		void attaquer();
+};
 #endif

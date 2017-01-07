@@ -4,14 +4,13 @@
 #include <iostream>
 
 #include "unite.h"
-
-using namespace std;
+#include "aire.h"
 
 class Fantassin : public Unite {
 	public :
-		Fantassin(int prix_, int pv_, int attaque_, int joueur_);
+		Fantassin(int joueur_, int place_);
 		~Fantassin();
-		virtual void action();
-		virtual void attaquer();
-}
+		void action();
+		void attaquer(Aire plateau);
+};
 #endif

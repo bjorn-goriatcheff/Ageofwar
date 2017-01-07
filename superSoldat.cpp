@@ -1,9 +1,12 @@
 #include "superSoldat.h"
 
-using namespace std;
-
-SuperSoldat::SuperSoldat(int prix_, int pv_, int attaque_, int joueur_) : Unite(prix_, pv_, attaque_, joueur_) {
-	
+SuperSoldat::SuperSoldat(int joueur_, int place_) {
+	setPrix(10);
+	setPv(10);
+	setAttaque(4);
+	setJoueur(joueur_);
+	setSymbole('S');
+	setPlace(place_);
 }
 
 SuperSoldat::~SuperSoldat() {

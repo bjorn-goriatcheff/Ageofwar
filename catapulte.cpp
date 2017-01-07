@@ -1,9 +1,12 @@
 #include "catapulte.h"
 
-using namespace std;
-
-Catapulte::Catapulte(int prix_, int pv_, int attaque_, int joueur_) : Unite(prix_, pv_, attaque_, joueur_) {
-	
+Catapulte::Catapulte(int joueur_, int place_) {
+	setPrix(20);
+	setPv(12);
+	setAttaque(6);
+	setJoueur(joueur_);
+	setSymbole('C');
+	setPlace(place_);
 }
 
 Catapulte::~Catapulte() {

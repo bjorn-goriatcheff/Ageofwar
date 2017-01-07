@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-using namespace std;
+class Aire;
 
 class Unite {
 	protected :
@@ -11,10 +11,21 @@ class Unite {
 		int pv;
 		int attaque;
 		int joueur;
+		char symbole;
+		int place;
 	public :
-		Unite(int prix_, int pv_, int attaque_, int joueur_);
-		virtual void action();
-		virtual void attaquer();
-		void deplacer();
-}
+		void deplacer(Aire plateau);
+		void setPrix(int prix_);
+		void setPv(int pv_);
+		void setAttaque(int attaque_);
+		void setJoueur(int joueur_);
+		void setSymbole(char symbole_);
+		char getSymbole();
+		int getJoueur();
+		void setPlace(int i);
+		int getPlace();
+		int getPv();
+		int getAttaque();
+		void blessure(int att);
+};
 #endif
