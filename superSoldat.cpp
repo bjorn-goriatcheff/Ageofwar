@@ -17,6 +17,6 @@ void SuperSoldat::action() {
 	
 }
 
-void SuperSoldat::attaquer() {
-	
+void SuperSoldat::attaquer(Aire plateau) {
+	std::cout << "supersoldat" << std::endl;
 }

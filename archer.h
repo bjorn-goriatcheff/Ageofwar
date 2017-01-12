@@ -10,6 +10,6 @@ class Archer : public Unite {
 		Archer(int joueur_, int place_);
 		~Archer();
 		void action();
-		void attaquer();
+		virtual void attaquer();
 };
 #endif

@@ -1,4 +1,5 @@
 #include "aire.h"
+#include "superSoldat.h"
 
 void Unite::deplacer(Aire plateau) {
 	if(joueur == 1) {
@@ -6,7 +7,7 @@ void Unite::deplacer(Aire plateau) {
 			throw 404;
 		}
 
-		else if (plateau.getCase(place)->getJoueur() != 0) {
+		else if (plateau.getCase(place).getJoueur() != 0) {
 			throw 405;
 		}
 
@@ -22,7 +23,7 @@ void Unite::deplacer(Aire plateau) {
 			throw 404;
 		}
 
-		else if (plateau.getCase(place - 2)->getJoueur() != 0) {
+		else if (plateau.getCase(place - 2).getJoueur() != 0) {
 			throw 405;
 		}
 
@@ -32,6 +33,73 @@ void Unite::deplacer(Aire plateau) {
 			place--;
 		}
 	}
+}
+
+void Unite::attaquer(Aire plateau) {
+	std::cout << "unite" << std::endl;
+
+	/*if (this->symbole == 'S') {
+		if (this->getJoueur() == 1) {
+			if (plateau.getCase(this->getPlace()).getJoueur() != 2) {
+				throw 808;
+			}
+
+			else {
+				plateau.cases[this->getPlace()].blessure(this->attaque);
+				if (plateau.cases[this->getPlace()].getPv() <= 0) {
+					plateau.setCase(this->getPlace(), new Unite());
+				}
+			}
+		}
+
+		if (this->getJoueur() == 2) {
+			if (plateau.getCase(this->getPlace() - 2).getJoueur() != 1) {
+				std::cout << plateau.getCase(this->getPlace() - 1).getSymbole() << std::endl;
+				throw 808;
+			}
+
+			else {
+				plateau.cases[this->getPlace() - 2].blessure(this->attaque);
+				if (plateau.cases[this->getPlace() - 2].getPv() <= 0) {
+					plateau.setCase(this->getPlace() - 2, new Unite());
+				}
+			}
+		}
+	}
+
+	else if (this->symbole == 'F') {
+		if (this->getJoueur() == 1) {
+			if (plateau.getCase(this->getPlace()).getJoueur() != 2) {
+				throw 808;
+			}
+
+			else {
+				plateau.cases[this->getPlace()].blessure(this->attaque);
+				if (plateau.cases[this->getPlace()].getPv() <= 0) {
+					plateau.setCase(this->getPlace(), new Unite());
+					int tampon = plateau.cases[this->getPlace() - 1].getPv();
+					plateau.setCase(this->getPlace() - 1, new SuperSoldat(1, this->getPlace()));
+					plateau.cases[this->getPlace() - 1].setPv(tampon);
+				}
+			}
+		}
+
+		if (this->getJoueur() == 2) {
+			if (plateau.getCase(this->getPlace() - 2).getJoueur() != 1) {
+				throw 808;
+			}
+
+			else {
+				plateau.cases[this->getPlace() - 2].blessure(this->attaque);
+				if (plateau.cases[this->getPlace() - 2].getPv() <= 0) {
+					plateau.setCase(this->getPlace() - 2, new Unite());
+					int tampon = plateau.cases[this->getPlace() - 1].getPv();
+					plateau.setCase(this->getPlace() - 1, new SuperSoldat(2, this->getPlace()));
+					plateau.cases[this->getPlace() - 1].setPv(tampon);
+				}
+			}
+		}
+	}*/
 }
 
 void Unite::setPrix(int prix_) {

@@ -11,6 +11,6 @@ class Fantassin : public Unite {
 		Fantassin(int joueur_, int place_);
 		~Fantassin();
 		void action();
-		void attaquer(Aire plateau);
+		virtual void attaquer(Aire plateau);
 };
 #endif

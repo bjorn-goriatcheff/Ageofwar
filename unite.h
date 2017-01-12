@@ -15,6 +15,7 @@ class Unite {
 		int place;
 	public :
 		void deplacer(Aire plateau);
+		virtual void attaquer(Aire plateau);
 		void setPrix(int prix_);
 		void setPv(int pv_);
 		void setAttaque(int attaque_);

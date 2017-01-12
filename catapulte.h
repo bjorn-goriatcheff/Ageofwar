@@ -10,6 +10,6 @@ class Catapulte : public Unite {
 		Catapulte(int joueur_, int place_);
 		~Catapulte();
 		void action();
-		void attaquer();
+		virtual void attaquer();
 };
 #endif

@@ -4,12 +4,13 @@
 #include <iostream>
 
 #include "unite.h"
+#include "aire.h"
 
 class SuperSoldat : public Unite {
 	public :
 		SuperSoldat(int joueur_, int place_);
 		~SuperSoldat();
 		void action();
-		void attaquer();
+		virtual void attaquer(Aire plateau);
 };
 #endif

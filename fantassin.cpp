@@ -18,13 +18,5 @@ void Fantassin::action() {
 }
 
 void Fantassin::attaquer(Aire plateau) {
-	if (this->getJoueur() == 1) {
-		if (plateau.getCase(this->getPlace())->getJoueur() != 2) {
-			throw 808;
-		}
-
-		else {
-			plateau.getCase(this->getPlace())->blessure(this->getAttaque());
-		}
-	}
+	std::cout << "fantassin" << std::endl;
 }
