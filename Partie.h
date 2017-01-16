@@ -1,3 +1,5 @@
+#include "Joueur.h" 
+
 class Partie{
 	private:
 	int numJoueurActif;

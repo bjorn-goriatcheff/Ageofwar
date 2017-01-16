@@ -1,21 +1,15 @@
-#include "AirdeJeu.h"
-AirdeJeu::AirdeJeu(){
-	
-	tabUnit = new Unite*[12];
-	
-}
+#include <iostream>
 
-
-void AirdeJeu::initAir(Base* b1, Base* b2){
+AirdeJeu::initAir(Base b1, Base b2){
 	baseplayer1=b1;
 	baseplayer2=b2;
 	
 }
-void AirdeJeu::initUnit(int pos, Unite* unit){
+AirdeJeu::initUnit(int pos, Unite unit){
 	tabUnit[pos] = unit;	
 }
 
-bool AirdeJeu::verifFrontLine(){
+AirdeJeu::verifFrontLine(){
 	if(posMaxPlayer1>=posMaxPlayer2){
 		return false;
 	}

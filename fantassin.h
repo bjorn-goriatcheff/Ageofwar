@@ -3,15 +3,13 @@
 
 #include <iostream>
 
-#include "unite.h"
-
-using namespace std;
 
 class Fantassin : public Unite {
 	public :
-		Fantassin(int prix_, int pv_, int attaque_, int joueur_);
+		Fantassin(int joueur_, int place_);
 		~Fantassin();
-		virtual void action();
-		virtual void attaquer();
-}
+		void action();
+		virtual void attaquer(int place);
+		virtual void getType();
+};
 #endif

@@ -1,9 +1,12 @@
 #include "fantassin.h"
 
-using namespace std;
-
-Fantassin::Fantassin(int prix_, int pv_, int attaque_, int joueur_) : Unite(prix_, pv_, attaque_, joueur_) {
-	
+Fantassin::Fantassin(int joueur_, int place_) {
+	setPrix(10);
+	setPv(10);
+	setAttaque(4);
+	setJoueur(joueur_);
+	setSymbole('F');
+	setPlace(place_);
 }
 
 Fantassin::~Fantassin() {
@@ -14,6 +17,9 @@ void Fantassin::action() {
 	
 }
 
-void Fantassin::attaquer() {
-	
+void Fantassin::attaquer(int place) {
+	std::cout << "fantassin" << std::endl;
+}
+void Fantassin::getType() {
+	std::cout << "fantassin" << std::endl;
 }
